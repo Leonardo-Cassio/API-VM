@@ -44,7 +44,7 @@
   ### Para ver o resultado
   ###### digite no seu navegagor   ip_da_maquina_vitual:4000
 
-  ###### se tudo deu certo, deverá aparecer uma mensagem no navegador
+  ###### se tudo deu certo, deverá aparecer uma mensagem no navegador  MINHA_API
      
 
   #### Prof. Alessandro fukuta
