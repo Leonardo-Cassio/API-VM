@@ -19,5 +19,15 @@
   ###### mkdir labweb
   ###### cd labweb
   ###### // agora vamos clonar esse repositorio para que você fique atualizado
-  ###### git clone
+  ###### git clone https://github.com/alessandro-fukuta/teste.git
 
+  ### Pronto, agora você tem o projeto dentro da sua VM
+  ###### digite:
+  ###### cd \teste
+  ###### ---> vamos instalar o NODEJS e bibliotecas
+  ###### 
+  #### instalação do nodejs
+  ###### ----------------------------------------------------------------------------
+  ###### curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+  ###### sudo apt-get install -y nodejs
+  ###### ----------------------------------------------------------------------------
