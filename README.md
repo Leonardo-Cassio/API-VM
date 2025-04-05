@@ -23,7 +23,7 @@
 
   ### Pronto, agora você tem o projeto dentro da sua VM
   ###### digite:
-  ###### cd \teste
+  ###### cd teste
   ###### ---> vamos instalar o NODEJS e bibliotecas
   ###### 
   #### instalação do nodejs
@@ -31,3 +31,19 @@
   ###### curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
   ###### sudo apt-get install -y nodejs
   ###### ----------------------------------------------------------------------------
+
+  ###### agora instalaçao das dependencias iniciais que vamos precisar
+  ###### sudo npm install express --save
+  ###### sudo npm install ejs --save
+  ###### sudo npm install mysql2 --save
+  ###### sudo npm install nodemon -g
+
+  ### Para executar o projeto digite:
+  ###### nodemon index.js
+
+  ### Para ver o resultado
+  ###### digite no seu navegagor   ip_da_maquina_vitual:4000
+
+  ###### se tudo deu certo, deverá aparecer uma mensagem no navegador
+  
+   
