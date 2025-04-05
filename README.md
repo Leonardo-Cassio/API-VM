@@ -3,7 +3,7 @@
 ### FATEC - FRANCA
 ### PROF. ALESSANDRO FUKUTA
 
-### OBJETIVO: Relembrar os conceitos já apresentados em NODEJS.
+### OBJETIVO: Relembrar os conceitos já apresentados em NODEJS e aprimorar conhecimento para criação do PI (Projeto Interdiciplinar)
 
 ##### para instalação desse projeto, seguimos os passos abaixo:
 
