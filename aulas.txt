@@ -43,6 +43,37 @@ module.exports = connection;
 
 --------------------------------------------------------------------------------------
 
+// dentro da pasta /database
+
+criar o script database.js
+--------------------------------------------------------------------------------------
+var mysql = require("mysql2");
+
+var connection = mysql.createConnection({
+    host:"localhost",
+    user:"fukuta",
+    password:"fpc250272#"
+});
+
+connection.connect(function(err) {
+   
+    if(err) throw err;
+    
+    console.log("Conectado!");
+
+    connection.query("CREATE DATABASE if not exists MINHA_API", 
+        function (err, result) {
+        if (err) throw err;
+        console.log("Banco de Dados OK !");
+      });
+
+});
+
+
+
+
+--------------------------------------------------------------------------------------
+
 // modelo MVC -> model view controller
 
 criar o homeController
@@ -65,10 +96,9 @@ module.exports = router;
 IMPORTAR ROTAS DENTRO DO INDEX.JS
 ----------------------------------------------------------------------------------------
 
-onst homesController = require("./home/homesController");
+const homesController = require("./home/homesController");
 app.use(homesController,"/");
 ----------------------------------------------------------------------------------------
-
 
 // implementar uma model de perguntas e respostas (chamada question)
 
@@ -91,6 +121,11 @@ app.use(homesController,"/");
             })
 
           
+
+            // ate aqui dia 11/04/2025
+            ----------------------------------------------
+
+
             // criando a tabela de respostas
           
             var sql = "create table if not exists respostas (id int primary key auto_increment, pergunta_id int, resposta longtext,

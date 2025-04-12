@@ -1,8 +1,11 @@
 const Express = require('express');
 const app = Express();
+//const database = require("./database/database");
 const connection = require("./database/connection");
+const homeController = require("./home/homeController");
 const bodyParser = require('body-parser');
 const porta = 4000;
+
 
 // engine vai ser ejs
 app.set("view engine", "ejs");
@@ -12,9 +15,7 @@ app.use(Express.static("public"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.get("/", (req, res) => {
-    res.render("index");
-});
+app.use("/", homeController);
 
 app.listen(porta, () => {
 
