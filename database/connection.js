@@ -2,8 +2,8 @@ var mysql = require("mysql2");
 
 var connection = mysql.createConnection({
     host:"localhost",
-    user:"fukuta",
-    password:"fpc250272#",
+    user:"leocassio",
+    password:"FatecFranca123#",
     database: "MINHA_API"
 });
 
